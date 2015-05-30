@@ -3,9 +3,9 @@
 (* :Author: rhennigan *)
 (* :Date: 5/30/2015 *)
 
-BeginPackage["GalaxyClassification`ImageProcessing", {}]
+BeginPackage["ImageProcessing"]
 
 test = 5;
-Print[test];
+Print[$ContextPath];
 
 EndPackage[]
