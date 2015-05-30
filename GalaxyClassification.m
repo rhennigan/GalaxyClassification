@@ -28,7 +28,7 @@ filteredImageFileNames = FileNames[FileNameJoin[{$GalaxyImageFilteredDirectory, 
 
 If[Not[FileExistsQ[$GalaxyImageFilteredDirectory]],
   CreateDirectory[$GalaxyImageFilteredDirectory];
-  
+
 ]
 
 
