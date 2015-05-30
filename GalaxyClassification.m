@@ -17,6 +17,8 @@ BeginPackage["GalaxyClassification`"]
 Unprotect["`*"]
 ClearAll["`*"]
 
+Print[$InputFileName]
+
 (* Load dependencies *)
 Needs["GalaxyClassification`ImageProcessing`"];
 
