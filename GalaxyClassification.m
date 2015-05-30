@@ -26,6 +26,14 @@ $GalaxyImageFilteredDirectory = FileNameJoin[{NotebookDirectory[], "images_train
 sourceImageFileNames = FileNames[FileNameJoin[{$GalaxyImageSourceDirectory, "*.jpg"}]];
 filteredImageFileNames = FileNames[FileNameJoin[{$GalaxyImageFilteredDirectory, "lg_*.jpg"}]];
 
+filteredMissing = Not[FileExistsQ[$GalaxyImageFilteredDirectory]];
+If[filteredMissing,
+  CreateDirectory[$GalaxyImageFilteredDirectory];
+
+]
+
+
+
 (* End Private Context *)
 (*End[]*)
 
