@@ -27,6 +27,8 @@ $ProjectDirectory = DirectoryName[$InputFileName];
 getDependency[name_String] := Get[FileNameJoin[{$ProjectDirectory, name <> ".m"}]]
 getDependency["ImageProcessing"];
 
+Needs["GalaxyClassification`ImageProcessing"];
+
 (* Path configuration for importing images *)
 $GalaxyImageSourceDirectory = FileNameJoin[{$ProjectDirectory, "images_training_rev1"}];
 $GalaxyImageFilteredDirectory = FileNameJoin[{$ProjectDirectory, "images_training_rev1_filtered"}];
