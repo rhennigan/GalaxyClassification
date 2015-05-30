@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    376054,       6246]
-NotebookOptionsPosition[    374732,       6204]
-NotebookOutlinePosition[    375616,       6230]
-CellTagsIndexPosition[    375573,       6227]
+NotebookDataLength[    377003,       6276]
+NotebookOptionsPosition[    375464,       6226]
+NotebookOutlinePosition[    376348,       6252]
+CellTagsIndexPosition[    376305,       6249]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -54,7 +54,7 @@ training_rev1\\\\100090.jpg\"\>"}], "}"}]], "Output",
  CellChangeTimes->{
   3.6419533447644224`*^9, 3.6419534239269543`*^9, {3.6419559494726553`*^9, 
    3.641955976815223*^9}, 3.641956664478602*^9, 3.6419567418429594`*^9, 
-   3.6419571637361965`*^9}]
+   3.6419571637361965`*^9, 3.641957198723215*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -69,6 +69,28 @@ Cell[BoxData[
    ",", "\<\"MyColors\"\>", ",", "\<\"rhs\"\>", ",", "\<\"SendToScreen\"\>", 
    ",", "\<\"TypeError\"\>", ",", "\<\"z\"\>"}], "}"}]], "Output",
  CellChangeTimes->{3.641956807793808*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["$GalaxyImageFilteredDirectory"], "Input",
+ CellChangeTimes->{{3.6419572557023897`*^9, 3.641957256876527*^9}}],
+
+Cell[BoxData["\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1_filtered\"\>"], "Output",
+ CellChangeTimes->{3.641957257664586*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"fileName", "=", 
+  RowBox[{"RandomChoice", "[", "sourceImageFileNames", "]"}]}]], "Input",
+ CellChangeTimes->{3.6419572678301544`*^9}],
+
+Cell[BoxData["\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1\\\\892973.jpg\"\>"], "Output",
+ CellChangeTimes->{{3.6419572619018145`*^9, 3.6419572685831985`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6232,22 +6254,30 @@ Notebook[{
 Cell[558, 20, 455, 10, 55, "Input"],
 Cell[CellGroupData[{
 Cell[1038, 34, 296, 5, 29, "Input"],
-Cell[1337, 41, 781, 15, 108, "Output"]
+Cell[1337, 41, 803, 15, 108, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2155, 61, 139, 2, 29, "Input"],
-Cell[2297, 65, 294, 5, 33, "Output"]
+Cell[2177, 61, 139, 2, 29, "Input"],
+Cell[2319, 65, 294, 5, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2628, 75, 331, 7, 33, "Input"],
-Cell[2962, 84, 269437, 4421, 439, "Output"],
-Cell[272402, 4507, 100732, 1656, 227, "Output"]
+Cell[2650, 75, 123, 1, 29, "Input"],
+Cell[2776, 78, 158, 2, 29, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[373171, 6168, 168, 2, 29, "Input"],
-Cell[373342, 6172, 276, 3, 29, "Output"]
+Cell[2971, 85, 158, 3, 33, "Input"],
+Cell[3132, 90, 191, 2, 29, "Output"]
 }, Open  ]],
-Cell[373633, 6178, 1095, 24, 121, "Input"]
+Cell[CellGroupData[{
+Cell[3360, 97, 331, 7, 33, "Input"],
+Cell[3694, 106, 269437, 4421, 439, "Output"],
+Cell[273134, 4529, 100732, 1656, 227, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[373903, 6190, 168, 2, 29, "Input"],
+Cell[374074, 6194, 276, 3, 29, "Output"]
+}, Open  ]],
+Cell[374365, 6200, 1095, 24, 121, "Input"]
 }
 ]
 *)
