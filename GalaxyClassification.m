@@ -18,8 +18,8 @@ Unprotect["`*"]
 ClearAll["`*"]
 
 (* Load dependencies *)
-GalaxyClassification`$RootDirectory = DirectoryName[$InputFileName];
-getDependency[name_String] := Get[FileNameJoin[{GalaxyClassification`$RootDirectory, name <> ".m"}]]
+$ProjectDirectory = DirectoryName[$InputFileName];
+getDependency[name_String] := Get[FileNameJoin[{$ProjectDirectory, name <> ".m"}]]
 getDependency["ImageProcessing"];
 
 (* Exported symbols added here with SymbolName::usage *)
