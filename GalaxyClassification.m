@@ -15,8 +15,16 @@
 BeginPackage["GalaxyClassification`"]
 (* Exported symbols added here with SymbolName::usage *)
 
-Begin["`Private`"] (* Begin Private Context *)
+Begin["`Private`"]  Begin Private Context
 
-End[] (* End Private Context *)
+(* Path configuration for importing images *)
+$GalaxyImageSourceDirectory = FileNameJoin[{NotebookDirectory[], "images_training_rev1"}];
+$GalaxyImageFilteredDirectory = FileNameJoin[{NotebookDirectory[], "images_training_rev1_filtered"}];
+
+(* Get file names for images *)
+sourceImageFileNames = FileNames[FileNameJoin[{$GalaxyImageSourceDirectory, "*.jpg"}]];
+filteredImageFileNames = FileNames[FileNameJoin[{$GalaxyImageFilteredDirectory, "lg_*.jpg"}]];
+
+End[]  End Private Context
 
 EndPackage[]

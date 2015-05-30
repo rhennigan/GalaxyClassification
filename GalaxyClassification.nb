@@ -1,1 +1,101 @@
-Notebook[{}]
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2845,         92]
+NotebookOptionsPosition[      1851,         60]
+NotebookOutlinePosition[      2735,         86]
+CellTagsIndexPosition[      2692,         83]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"Get", "[", 
+  RowBox[{"FileNameJoin", "[", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+     "\"\<GalaxyClassification.m\>\""}], "}"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6419528132620573`*^9, 3.6419528439228115`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<Global`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6419529903061943`*^9, 3.64195299809064*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"idx\"\>", ",", "\<\"MinMaxRange\"\>", ",", "\<\"MyColors\"\>", 
+   ",", "\<\"rhs\"\>", ",", "\<\"SendToScreen\"\>", ",", "\<\"TypeError\"\>", 
+   ",", "\<\"z\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.6419529985546665`*^9, 3.6419530562839007`*^9, {3.6419531108200293`*^9, 
+   3.6419531310031853`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Names", "[", "\"\<GalaxyClassification`*\>\"", "]"}]], "Input",
+ CellChangeTimes->{3.641953041751068*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"filteredImageFileNames\"\>", 
+   ",", "\<\"sourceImageFileNames\"\>", 
+   ",", "\<\"$GalaxyImageFilteredDirectory\"\>", 
+   ",", "\<\"$GalaxyImageSourceDirectory\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.641953043044215*^9, 3.6419531116761446`*^9}]
+}, Open  ]]
+},
+WindowSize->{783, 883},
+WindowMargins->{{Automatic, -858}, {-324, Automatic}},
+FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Default.nb"]], 
+   Cell[
+    StyleData["StandardForm"], MenuSortingValue -> 10000, FontFamily -> 
+    "PragmataPro", FontSize -> 13, FontWeight -> "Plain", FontSlant -> 
+    "Plain", FontVariations -> {
+     "StrikeThrough" -> False, "Underline" -> False}]}, 
+  WindowSize -> {783, 883}, 
+  WindowMargins -> {{225, Automatic}, {-16, Automatic}}, Visible -> False, 
+  FrontEndVersion -> "10.0 for Microsoft Windows (64-bit) (July 1, 2014)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 291, 7, 33, "Input"],
+Cell[CellGroupData[{
+Cell[874, 31, 140, 2, 29, "Input"],
+Cell[1017, 35, 352, 7, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1406, 47, 129, 2, 33, "Input"],
+Cell[1538, 51, 297, 6, 55, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
