@@ -37,4 +37,6 @@ transformImage[img_] := Module[{w, h, components, label, img2, imgc, orientation
   resized
 ]
 
+Print["Hello!"]
+
 EndPackage[]
