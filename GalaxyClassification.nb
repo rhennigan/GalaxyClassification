@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    375836,       6251]
-NotebookOptionsPosition[    374442,       6206]
-NotebookOutlinePosition[    375326,       6232]
-CellTagsIndexPosition[    375283,       6229]
+NotebookDataLength[    376054,       6246]
+NotebookOptionsPosition[    374732,       6204]
+NotebookOutlinePosition[    375616,       6230]
+CellTagsIndexPosition[    375573,       6227]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,12 +26,9 @@ Cell[BoxData[{
      RowBox[{"NotebookDirectory", "[", "]"}], ",", 
      "\"\<GalaxyClassification.m\>\""}], "}"}], "]"}], 
   "]"}], "\[IndentingNewLine]", 
- RowBox[{"Needs", "[", "\"\<GalaxyClassification`\>\"", 
-  "]"}], "\[IndentingNewLine]", 
- RowBox[{"Needs", "[", "\"\<GalaxyClassification`ImageProcessing`\>\"", 
-  "]"}]}], "Input",
+ RowBox[{"Needs", "[", "\"\<GalaxyClassification`\>\"", "]"}]}], "Input",
  CellChangeTimes->{{3.6419528132620573`*^9, 3.6419528439228115`*^9}, {
-  3.641956737971738*^9, 3.641956756640853*^9}}],
+   3.641956737971738*^9, 3.641956756640853*^9}, 3.641957179693107*^9}],
 
 Cell[CellGroupData[{
 
@@ -56,7 +53,8 @@ training_rev1\\\\100078.jpg\"\>",
 training_rev1\\\\100090.jpg\"\>"}], "}"}]], "Output",
  CellChangeTimes->{
   3.6419533447644224`*^9, 3.6419534239269543`*^9, {3.6419559494726553`*^9, 
-   3.641955976815223*^9}, 3.641956664478602*^9, 3.6419567418429594`*^9}]
+   3.641955976815223*^9}, 3.641956664478602*^9, 3.6419567418429594`*^9, 
+   3.6419571637361965`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -77,13 +75,12 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{
-   RowBox[{"fileName", "=", 
-    RowBox[{"RandomChoice", "[", "sourceImageFileNames", "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}]], "Input",
+  RowBox[{"fileName", "=", 
+   RowBox[{"RandomChoice", "[", "sourceImageFileNames", "]"}]}], 
+  ";"}]], "Input",
  CellChangeTimes->{{3.6419561257327504`*^9, 3.641956126412792*^9}, {
    3.6419561744285374`*^9, 3.64195617462855*^9}, 3.6419563962782435`*^9, 
-   3.6419568759347115`*^9}],
+   3.6419568759347115`*^9, 3.6419571670453095`*^9}],
 
 Cell[BoxData[
  GraphicsBox[
@@ -6169,15 +6166,9 @@ HnPh6//fN5gv5w==
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"outFileName", "=", 
-  RowBox[{"FileNameJoin", "[", 
-   RowBox[{"{", 
-    RowBox[{"$GalaxyImageFilteredDirectory", ",", " ", 
-     RowBox[{"FileNameTake", "[", "fileName", "]"}]}], "}"}], 
-   "]"}]}]], "Input",
+Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.641956223277263*^9, 3.641956231972844*^9}, {
-  3.641956288381065*^9, 3.6419563145814915`*^9}}],
+   3.641956288381065*^9, 3.6419563145814915`*^9}, 3.6419569107257032`*^9}],
 
 Cell[BoxData["\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
 training_rev1_filtered\\\\339846.jpg\"\>"], "Output",
@@ -6185,24 +6176,31 @@ training_rev1_filtered\\\\339846.jpg\"\>"], "Output",
    3.6419562909401407`*^9, 3.6419563305154777`*^9}, 3.6419568789058094`*^9}]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"If", "[", 
-  RowBox[{
-   RowBox[{"Not", "[", 
-    RowBox[{"FileExistsQ", "[", "outFileName", "]"}], "]"}], ",", 
-   RowBox[{"Export", "[", 
-    RowBox[{"outFileName", ",", 
-     RowBox[{"transformImage", "[", 
-      RowBox[{"Import", "[", "fileName", "]"}], "]"}]}], "]"}]}], 
-  "]"}]], "Input",
+ RowBox[{
+  RowBox[{"CheckAndTransform", "[", "fileName_String", "]"}], ":=", 
+  RowBox[{"Module", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", "outFileName", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"outFileName", "=", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{"$GalaxyImageFilteredDirectory", ",", " ", 
+         RowBox[{"FileNameTake", "[", "fileName", "]"}]}], "}"}], "]"}]}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"Not", "[", 
+        RowBox[{"FileExistsQ", "[", "outFileName", "]"}], "]"}], ",", 
+       RowBox[{"Export", "[", 
+        RowBox[{"outFileName", ",", 
+         RowBox[{"transformImage", "[", 
+          RowBox[{"Import", "[", "fileName", "]"}], "]"}]}], "]"}]}], "]"}], 
+     ";"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
  CellChangeTimes->{{3.641956331910486*^9, 3.6419563365328207`*^9}, {
-  3.641956367860616*^9, 3.6419564026536093`*^9}}],
-
-Cell[BoxData["False"], "Output",
- CellChangeTimes->{3.6419563370247765`*^9}]
-}, Open  ]]
+  3.641956367860616*^9, 3.6419564026536093`*^9}, {3.641956911965775*^9, 
+  3.641956938959321*^9}, {3.6419569809887276`*^9, 3.6419569936874557`*^9}}]
 },
 WindowSize->{783, 883},
 WindowMargins->{{Automatic, -858}, {-324, Automatic}},
@@ -6231,28 +6229,25 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 541, 13, 77, "Input"],
+Cell[558, 20, 455, 10, 55, "Input"],
 Cell[CellGroupData[{
-Cell[1124, 37, 296, 5, 29, "Input"],
-Cell[1423, 44, 753, 14, 108, "Output"]
+Cell[1038, 34, 296, 5, 29, "Input"],
+Cell[1337, 41, 781, 15, 108, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2213, 63, 139, 2, 29, "Input"],
-Cell[2355, 67, 294, 5, 33, "Output"]
+Cell[2155, 61, 139, 2, 29, "Input"],
+Cell[2297, 65, 294, 5, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2686, 77, 345, 8, 51, "Input"],
-Cell[3034, 87, 269437, 4421, 439, "Output"],
-Cell[272474, 4510, 100732, 1656, 227, "Output"]
+Cell[2628, 75, 331, 7, 33, "Input"],
+Cell[2962, 84, 269437, 4421, 439, "Output"],
+Cell[272402, 4507, 100732, 1656, 227, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[373243, 6171, 350, 8, 33, "Input"],
-Cell[373596, 6181, 276, 3, 29, "Output"]
+Cell[373171, 6168, 168, 2, 29, "Input"],
+Cell[373342, 6172, 276, 3, 29, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[373909, 6189, 438, 11, 33, "Input"],
-Cell[374350, 6202, 76, 1, 29, "Output"]
-}, Open  ]]
+Cell[373633, 6178, 1095, 24, 121, "Input"]
 }
 ]
 *)
