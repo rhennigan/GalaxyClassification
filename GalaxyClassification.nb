@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    376042,       6242]
-NotebookOptionsPosition[    374791,       6203]
-NotebookOutlinePosition[    375675,       6229]
-CellTagsIndexPosition[    375632,       6226]
+NotebookDataLength[    376711,       6260]
+NotebookOptionsPosition[    375388,       6218]
+NotebookOutlinePosition[    376273,       6244]
+CellTagsIndexPosition[    376230,       6241]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -62,13 +62,28 @@ training_rev1\\\\100090.jpg\"\>"}], "}"}]], "Output",
    3.6419574359727173`*^9, 3.6419576428376307`*^9}]
 }, Open  ]],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{
+ RowBox[{"ParallelMap", "[", 
   RowBox[{
-   RowBox[{"CheckAndTransform", "[", 
-    RowBox[{"$GalaxyImageFilteredDirectory", ",", "#"}], "]"}], "&"}], "/@", 
-  RowBox[{"sourceImageFileNames", "\[LeftDoubleBracket]", 
-   RowBox[{";;", "32"}], "\[RightDoubleBracket]"}]}]], "Input"],
+   RowBox[{
+    RowBox[{"CheckAndTransform", "[", 
+     RowBox[{"$GalaxyImageFilteredDirectory", ",", "#"}], "]"}], "&"}], ",", 
+   "sourceImageFileNames"}], "]"}]], "Input",
+ CellChangeTimes->{{3.641957746902516*^9, 3.6419577737580533`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", 
+   "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", ",", "Null", 
+   ",", "Null", ",", "Null", ",", "Null", ",", "Null"}], "}"}]], "Output",
+ CellChangeTimes->{3.6419576788536205`*^9}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -6201,8 +6216,8 @@ Cell[BoxData[
   3.641956367860616*^9, 3.6419564026536093`*^9}, {3.641956911965775*^9, 
   3.641956938959321*^9}, {3.6419569809887276`*^9, 3.6419569936874557`*^9}}]
 },
-WindowSize->{783, 883},
-WindowMargins->{{Automatic, -858}, {-324, Automatic}},
+WindowSize->{947, 883},
+WindowMargins->{{Automatic, -1022}, {-324, Automatic}},
 FrontEndVersion->"10.0 for Microsoft Windows (64-bit) (July 1, 2014)",
 StyleDefinitions->Notebook[{
    Cell[
@@ -6233,17 +6248,20 @@ Cell[CellGroupData[{
 Cell[1196, 38, 296, 5, 29, "Input"],
 Cell[1495, 45, 879, 16, 108, "Output"]
 }, Open  ]],
-Cell[2389, 64, 273, 6, 33, "Input"],
 Cell[CellGroupData[{
-Cell[2687, 74, 331, 7, 33, "Input"],
-Cell[3021, 83, 269437, 4421, 439, "Output"],
-Cell[272461, 4506, 100732, 1656, 227, "Output"]
+Cell[2411, 66, 297, 7, 33, "Input"],
+Cell[2711, 75, 536, 9, 48, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[373230, 6167, 168, 2, 29, "Input"],
-Cell[373401, 6171, 276, 3, 29, "Output"]
+Cell[3284, 89, 331, 7, 33, "Input"],
+Cell[3618, 98, 269437, 4421, 439, "Output"],
+Cell[273058, 4521, 100732, 1656, 227, "Output"]
 }, Open  ]],
-Cell[373692, 6177, 1095, 24, 121, "Input"]
+Cell[CellGroupData[{
+Cell[373827, 6182, 168, 2, 29, "Input"],
+Cell[373998, 6186, 276, 3, 29, "Output"]
+}, Open  ]],
+Cell[374289, 6192, 1095, 24, 121, "Input"]
 }
 ]
 *)
