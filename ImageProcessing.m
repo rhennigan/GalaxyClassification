@@ -41,9 +41,9 @@ transformImage[img_] := Module[{w, h, components, label, img2, imgc, orientation
   resized
 ]
 
-CheckAndTransform[sourceDir_String, fileName_String] := Module[
+CheckAndTransform[outDir_String, fileName_String] := Module[
   {outFileName},
-  outFileName = FileNameJoin[{sourceDir, FileNameTake[fileName]}];
+  outFileName = FileNameJoin[{outDir, FileNameTake[fileName]}];
   If[Not[FileExistsQ[outFileName]], Export[outFileName, transformImage[Import[fileName]]]];
 ]
 
