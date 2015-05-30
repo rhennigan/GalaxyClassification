@@ -17,10 +17,10 @@ BeginPackage["GalaxyClassification`"]
 Unprotect["`*"]
 ClearAll["`*"]
 
-Print[DirectoryName[$InputFileName]]
-
 (* Load dependencies *)
-Needs["GalaxyClassification`ImageProcessing`"];
+GalaxyClassification`$RootDirectory = DirectoryName[$InputFileName];
+getDependency[name_String] := Get[FileNameJoin[{GalaxyClassification`$RootDirectory, name <> ".m"}]]
+getDependency["ImageProcessing"];
 
 (* Exported symbols added here with SymbolName::usage *)
 
