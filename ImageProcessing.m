@@ -3,3 +3,8 @@
 (* :Author: rhennigan *)
 (* :Date: 5/30/2015 *)
 
+BeginPackage["GalaxyClassification`ImageProcessing"]
+
+
+
+EndPackage[]

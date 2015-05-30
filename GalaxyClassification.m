@@ -12,7 +12,7 @@
 (* :Keywords:                  *)
 (* :Discussion:                *)
 
-BeginPackage["GalaxyClassification`"]
+BeginPackage["GalaxyClassification`", {"GalaxyClassification`ImageProcessing"}]
 
 Unprotect["`*"]
 ClearAll["`*"]
