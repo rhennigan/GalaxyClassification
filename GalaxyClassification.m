@@ -34,12 +34,9 @@ $GalaxyImageSourceDirectory = FileNameJoin[{$ProjectDirectory, "images_training_
 $GalaxyImageFilteredDirectory = FileNameJoin[{$ProjectDirectory, "images_training_rev1_filtered"}];
 
 (* Get file names for images *)
-sourceImageFileNames = FileNames[FileNameJoin[{$GalaxyImageSourceDirectory, "*.jpg"}]];
-filteredImageFileNames = FileNames[FileNameJoin[{$GalaxyImageFilteredDirectory, "lg_*.jpg"}]];
-
 If[Not[FileExistsQ[$GalaxyImageFilteredDirectory]], CreateDirectory[$GalaxyImageFilteredDirectory]];
-
-
+sourceImageFileNames = FileNames[FileNameJoin[{$GalaxyImageSourceDirectory, "*.jpg"}]];
+ParallelMap[CheckAndTransform[$GalaxyImageFilteredDirectory, #]&, sourceImageFileNames];
 
 (* End Private Context *)
 (*End[]*)
