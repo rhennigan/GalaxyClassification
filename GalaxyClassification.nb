@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    378061,       6308]
-NotebookOptionsPosition[    376373,       6253]
-NotebookOutlinePosition[    377257,       6279]
-CellTagsIndexPosition[    377214,       6276]
+NotebookDataLength[    378250,       6310]
+NotebookOptionsPosition[    376561,       6255]
+NotebookOutlinePosition[    377445,       6281]
+CellTagsIndexPosition[    377402,       6278]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -58,7 +58,8 @@ training_rev1\\\\100090.jpg\"\>"}], "}"}]], "Output",
  CellChangeTimes->{
   3.6419533447644224`*^9, 3.6419534239269543`*^9, {3.6419559494726553`*^9, 
    3.641955976815223*^9}, 3.641956664478602*^9, 3.6419567418429594`*^9, 
-   3.6419571637361965`*^9, 3.641957198723215*^9, 3.6419573650637245`*^9}]
+   3.6419571637361965`*^9, 3.641957198723215*^9, 3.6419573650637245`*^9, 
+   3.6419574359727173`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -74,7 +75,7 @@ Cell[BoxData[
    ",", "\<\"$GalaxyImageFilteredDirectory\"\>", 
    ",", "\<\"$GalaxyImageSourceDirectory\"\>", 
    ",", "\<\"$ProjectDirectory\"\>"}], "}"}]], "Output",
- CellChangeTimes->{3.641957375866342*^9}]
+ CellChangeTimes->{3.641957375866342*^9, 3.641957438275919*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -86,12 +87,10 @@ Cell[BoxData[
   3.6419573124226356`*^9, 3.641957326245449*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", \
-"\<\"GalaxyClassification`ImageProcessing`CheckAndTransform\"\>", 
-  "}"}]], "Output",
+ RowBox[{"{", "\<\"CheckAndTransform\"\>", "}"}]], "Output",
  CellChangeTimes->{
   3.641956807793808*^9, {3.641957314821782*^9, 3.6419573267124567`*^9}, 
-   3.641957384589768*^9}]
+   3.641957384589768*^9, 3.641957440129981*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -101,7 +100,8 @@ Cell[BoxData["$GalaxyImageFilteredDirectory"], "Input",
 
 Cell[BoxData["\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
 training_rev1_filtered\"\>"], "Output",
- CellChangeTimes->{3.641957257664586*^9, 3.6419574249660826`*^9}]
+ CellChangeTimes->{
+  3.641957257664586*^9, {3.6419574249660826`*^9, 3.6419574499585876`*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -112,13 +112,15 @@ Cell[BoxData[
  CellChangeTimes->{3.6419572678301544`*^9}],
 
 Cell[BoxData["\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
-training_rev1\\\\597202.jpg\"\>"], "Output",
- CellChangeTimes->{{3.6419572619018145`*^9, 3.6419572685831985`*^9}, 
-   3.641957425764126*^9}]
+training_rev1\\\\247373.jpg\"\>"], "Output",
+ CellChangeTimes->{{3.6419572619018145`*^9, 3.6419572685831985`*^9}, {
+  3.641957425764126*^9, 3.6419574505815487`*^9}}]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.6419574078521852`*^9, 3.641957429806379*^9}}],
+Cell[BoxData[
+ RowBox[{"CheckAndTransform", "[", 
+  RowBox[{"$GalaxyImageFilteredDirectory", ",", "fileName"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6419574078521852`*^9, 3.6419574722408113`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -6281,35 +6283,35 @@ Notebook[{
 Cell[558, 20, 613, 14, 77, "Input"],
 Cell[CellGroupData[{
 Cell[1196, 38, 296, 5, 29, "Input"],
-Cell[1495, 45, 827, 15, 108, "Output"]
+Cell[1495, 45, 855, 16, 108, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2359, 65, 153, 2, 33, "Input"],
-Cell[2515, 69, 362, 7, 55, "Output"]
+Cell[2387, 66, 153, 2, 33, "Input"],
+Cell[2543, 70, 384, 7, 55, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2914, 81, 223, 4, 33, "Input"],
-Cell[3140, 87, 235, 6, 33, "Output"]
+Cell[2964, 82, 223, 4, 33, "Input"],
+Cell[3190, 88, 215, 4, 29, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3412, 98, 123, 1, 29, "Input"],
-Cell[3538, 101, 182, 2, 29, "Output"]
+Cell[3442, 97, 123, 1, 29, "Input"],
+Cell[3568, 100, 211, 3, 29, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3757, 108, 158, 3, 33, "Input"],
-Cell[3918, 113, 217, 3, 29, "Output"]
+Cell[3816, 108, 158, 3, 33, "Input"],
+Cell[3977, 113, 242, 3, 29, "Output"]
 }, Open  ]],
-Cell[4150, 119, 94, 1, 29, "Input"],
+Cell[4234, 119, 198, 3, 33, "Input"],
 Cell[CellGroupData[{
-Cell[4269, 124, 331, 7, 33, "Input"],
-Cell[4603, 133, 269437, 4421, 439, "Output"],
-Cell[274043, 4556, 100732, 1656, 227, "Output"]
+Cell[4457, 126, 331, 7, 33, "Input"],
+Cell[4791, 135, 269437, 4421, 439, "Output"],
+Cell[274231, 4558, 100732, 1656, 227, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[374812, 6217, 168, 2, 29, "Input"],
-Cell[374983, 6221, 276, 3, 29, "Output"]
+Cell[375000, 6219, 168, 2, 29, "Input"],
+Cell[375171, 6223, 276, 3, 29, "Output"]
 }, Open  ]],
-Cell[375274, 6227, 1095, 24, 121, "Input"]
+Cell[375462, 6229, 1095, 24, 121, "Input"]
 }
 ]
 *)
