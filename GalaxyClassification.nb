@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2845,         92]
-NotebookOptionsPosition[      1851,         60]
-NotebookOutlinePosition[      2735,         86]
-CellTagsIndexPosition[      2692,         83]
+NotebookDataLength[      6060,        185]
+NotebookOptionsPosition[      4622,        138]
+NotebookOutlinePosition[      5506,        164]
+CellTagsIndexPosition[      5463,        161]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -30,24 +30,10 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Names", "[", "\"\<Global`*\>\"", "]"}]], "Input",
- CellChangeTimes->{{3.6419529903061943`*^9, 3.64195299809064*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"idx\"\>", ",", "\<\"MinMaxRange\"\>", ",", "\<\"MyColors\"\>", 
-   ",", "\<\"rhs\"\>", ",", "\<\"SendToScreen\"\>", ",", "\<\"TypeError\"\>", 
-   ",", "\<\"z\"\>"}], "}"}]], "Output",
- CellChangeTimes->{
-  3.6419529985546665`*^9, 3.6419530562839007`*^9, {3.6419531108200293`*^9, 
-   3.6419531310031853`*^9}}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
  RowBox[{"Names", "[", "\"\<GalaxyClassification`*\>\"", "]"}]], "Input",
- CellChangeTimes->{3.641953041751068*^9}],
+ CellChangeTimes->{
+  3.641953041751068*^9, {3.6419532924604363`*^9, 3.6419532940685916`*^9}, {
+   3.641953409916154*^9, 3.641953410516259*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -55,7 +41,99 @@ Cell[BoxData[
    ",", "\<\"sourceImageFileNames\"\>", 
    ",", "\<\"$GalaxyImageFilteredDirectory\"\>", 
    ",", "\<\"$GalaxyImageSourceDirectory\"\>"}], "}"}]], "Output",
- CellChangeTimes->{3.641953043044215*^9, 3.6419531116761446`*^9}]
+ CellChangeTimes->{
+  3.641953043044215*^9, 3.6419531116761446`*^9, {3.6419532877362275`*^9, 
+   3.6419532945365467`*^9}, 3.641953411069298*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<GalaxyClassification`\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.6419533100815105`*^9, 3.641953320524105*^9}, {
+  3.6419534149645147`*^9, 3.6419534152834597`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"filteredImageFileNames", "\[LeftDoubleBracket]", 
+  RowBox[{";;", "5"}], "\[RightDoubleBracket]"}]], "Input",
+ CellChangeTimes->{{3.6419533388751574`*^9, 3.641953344251464*^9}, {
+  3.641953421828917*^9, 3.64195342302798*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "take"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot take positions \[NoBreak]\\!\\(1\\)\[NoBreak] \
+through \[NoBreak]\\!\\(5\\)\[NoBreak] in \[NoBreak]\\!\\({}\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Part/take\\\", \
+ButtonNote -> \\\"Part::take\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.641953344737508*^9, 3.641953423924954*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", "}"}], "\[LeftDoubleBracket]", 
+  RowBox[{"1", ";;", "5"}], "\[RightDoubleBracket]"}]], "Output",
+ CellChangeTimes->{3.6419533447644224`*^9, 3.6419534239269543`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FileNameJoin", "[", 
+  RowBox[{"{", 
+   RowBox[{"$GalaxyImageFilteredDirectory", ",", "\"\<lg_*.jpg\>\""}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.641953478871172*^9, 3.641953480196177*^9}}],
+
+Cell[BoxData["\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1_filtered\\\\lg_*.jpg\"\>"], "Output",
+ CellChangeTimes->{3.641953480899289*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"FileNames", "[", 
+   RowBox[{"FileNameJoin", "[", 
+    RowBox[{"{", 
+     RowBox[{"$GalaxyImageFilteredDirectory", ",", "\"\<lg_*.jpg\>\""}], 
+     "}"}], "]"}], "]"}], "\[LeftDoubleBracket]", 
+  RowBox[{";;", "5"}], "\[RightDoubleBracket]"}]], "Input",
+ CellChangeTimes->{{3.641953489085742*^9, 3.6419534929629793`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "take"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Cannot take positions \[NoBreak]\\!\\(1\\)\[NoBreak] \
+through \[NoBreak]\\!\\(5\\)\[NoBreak] in \[NoBreak]\\!\\({}\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Part/take\\\", \
+ButtonNote -> \\\"Part::take\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6419534934159513`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", "}"}], "\[LeftDoubleBracket]", 
+  RowBox[{"1", ";;", "5"}], "\[RightDoubleBracket]"}]], "Output",
+ CellChangeTimes->{3.6419534934169364`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"If", "[", "\[IndentingNewLine]", 
+  RowBox[{"Not", "[", 
+   RowBox[{"FileExistsQ", "[", "$GalaxyImageFilteredDirectory", "]"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.641953689156215*^9, 3.64195371685273*^9}}],
+
+Cell[BoxData["True"], "Output",
+ CellChangeTimes->{{3.6419536958256073`*^9, 3.641953709027281*^9}}]
 }, Open  ]]
 },
 WindowSize->{783, 883},
@@ -87,12 +165,27 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 291, 7, 33, "Input"],
 Cell[CellGroupData[{
-Cell[874, 31, 140, 2, 29, "Input"],
-Cell[1017, 35, 352, 7, 33, "Output"]
+Cell[874, 31, 232, 4, 33, "Input"],
+Cell[1109, 37, 376, 8, 55, "Output"]
+}, Open  ]],
+Cell[1500, 48, 207, 3, 33, "Input"],
+Cell[CellGroupData[{
+Cell[1732, 55, 249, 4, 29, "Input"],
+Cell[1984, 61, 522, 10, 21, "Message"],
+Cell[2509, 73, 204, 4, 29, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1406, 47, 129, 2, 33, "Input"],
-Cell[1538, 51, 297, 6, 55, "Output"]
+Cell[2750, 82, 224, 5, 33, "Input"],
+Cell[2977, 89, 170, 2, 29, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3184, 96, 356, 8, 33, "Input"],
+Cell[3543, 106, 502, 10, 21, "Message"],
+Cell[4048, 118, 180, 4, 29, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4265, 127, 239, 5, 55, "Input"],
+Cell[4507, 134, 99, 1, 29, "Output"]
 }, Open  ]]
 }
 ]
