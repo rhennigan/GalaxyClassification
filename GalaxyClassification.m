@@ -13,6 +13,10 @@
 (* :Discussion:                *)
 
 BeginPackage["GalaxyClassification`"]
+
+Unprotect["`*"]
+ClearAll["`*"]
+
 (* Exported symbols added here with SymbolName::usage *)
 
 (* Begin Private Context *)
