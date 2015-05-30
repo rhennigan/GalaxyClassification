@@ -17,19 +17,19 @@ BeginPackage["GalaxyClassification`"]
 Unprotect["`*"]
 ClearAll["`*"]
 
-(* Load dependencies *)
-$ProjectDirectory = DirectoryName[$InputFileName];
-getDependency[name_String] := Get[FileNameJoin[{$ProjectDirectory, name <> ".m"}]]
-getDependency["ImageProcessing"];
-
 (* Exported symbols added here with SymbolName::usage *)
 
 (* Begin Private Context *)
 (*Begin["`Private`"]*)
 
+(* Load dependencies *)
+$ProjectDirectory = DirectoryName[$InputFileName];
+getDependency[name_String] := Get[FileNameJoin[{$ProjectDirectory, name <> ".m"}]]
+getDependency["ImageProcessing"];
+
 (* Path configuration for importing images *)
-$GalaxyImageSourceDirectory = FileNameJoin[{NotebookDirectory[], "images_training_rev1"}];
-$GalaxyImageFilteredDirectory = FileNameJoin[{NotebookDirectory[], "images_training_rev1_filtered"}];
+$GalaxyImageSourceDirectory = FileNameJoin[{$ProjectDirectory, "images_training_rev1"}];
+$GalaxyImageFilteredDirectory = FileNameJoin[{$ProjectDirectory, "images_training_rev1_filtered"}];
 
 (* Get file names for images *)
 sourceImageFileNames = FileNames[FileNameJoin[{$GalaxyImageSourceDirectory, "*.jpg"}]];
