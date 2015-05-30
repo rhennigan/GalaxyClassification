@@ -5,6 +5,7 @@
 
 BeginPackage["GalaxyClassification`ImageProcessing`", {"GalaxyClassification`"}]
 
+(* Exports *)
 CheckAndTransform::usage = ""
 
 Begin["`Private`"]
