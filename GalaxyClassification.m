@@ -17,7 +17,8 @@ BeginPackage["GalaxyClassification`"]
 Unprotect["`*"]
 ClearAll["`*"]
 
-Get["ImageProcessing.m"]
+(* Load dependencies *)
+Get[FileNameJoin[{NotebookDirectory[],"ImageProcessing.m"}]]
 
 (* Exported symbols added here with SymbolName::usage *)
 
