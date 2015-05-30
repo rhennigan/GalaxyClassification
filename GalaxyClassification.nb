@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6060,        185]
-NotebookOptionsPosition[      4622,        138]
-NotebookOutlinePosition[      5506,        164]
-CellTagsIndexPosition[      5463,        161]
+NotebookDataLength[      5579,        168]
+NotebookOptionsPosition[      4250,        125]
+NotebookOutlinePosition[      5134,        151]
+CellTagsIndexPosition[      5091,        148]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,25 +27,6 @@ Cell[BoxData[
      "\"\<GalaxyClassification.m\>\""}], "}"}], "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.6419528132620573`*^9, 3.6419528439228115`*^9}}],
 
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"Names", "[", "\"\<GalaxyClassification`*\>\"", "]"}]], "Input",
- CellChangeTimes->{
-  3.641953041751068*^9, {3.6419532924604363`*^9, 3.6419532940685916`*^9}, {
-   3.641953409916154*^9, 3.641953410516259*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{"\<\"filteredImageFileNames\"\>", 
-   ",", "\<\"sourceImageFileNames\"\>", 
-   ",", "\<\"$GalaxyImageFilteredDirectory\"\>", 
-   ",", "\<\"$GalaxyImageSourceDirectory\"\>"}], "}"}]], "Output",
- CellChangeTimes->{
-  3.641953043044215*^9, 3.6419531116761446`*^9, {3.6419532877362275`*^9, 
-   3.6419532945365467`*^9}, 3.641953411069298*^9}]
-}, Open  ]],
-
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<GalaxyClassification`\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.6419533100815105`*^9, 3.641953320524105*^9}, {
@@ -54,28 +35,27 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"filteredImageFileNames", "\[LeftDoubleBracket]", 
+ RowBox[{"sourceImageFileNames", "\[LeftDoubleBracket]", 
   RowBox[{";;", "5"}], "\[RightDoubleBracket]"}]], "Input",
  CellChangeTimes->{{3.6419533388751574`*^9, 3.641953344251464*^9}, {
-  3.641953421828917*^9, 3.64195342302798*^9}}],
+  3.641953421828917*^9, 3.64195342302798*^9}, {3.641955964717459*^9, 
+  3.641955976124183*^9}}],
 
 Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"Part", "::", "take"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Cannot take positions \[NoBreak]\\!\\(1\\)\[NoBreak] \
-through \[NoBreak]\\!\\(5\\)\[NoBreak] in \[NoBreak]\\!\\({}\\)\[NoBreak]. \
-\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
-ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Part/take\\\", \
-ButtonNote -> \\\"Part::take\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.641953344737508*^9, 3.641953423924954*^9}],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"{", "}"}], "\[LeftDoubleBracket]", 
-  RowBox[{"1", ";;", "5"}], "\[RightDoubleBracket]"}]], "Output",
- CellChangeTimes->{3.6419533447644224`*^9, 3.6419534239269543`*^9}]
+ RowBox[{"{", 
+  RowBox[{"\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1\\\\100008.jpg\"\>", 
+   ",", "\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1\\\\100023.jpg\"\>", 
+   ",", "\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1\\\\100053.jpg\"\>", 
+   ",", "\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1\\\\100078.jpg\"\>", 
+   ",", "\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\images_\
+training_rev1\\\\100090.jpg\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.6419533447644224`*^9, 3.6419534239269543`*^9, {3.6419559494726553`*^9, 
+   3.641955976815223*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -126,15 +106,22 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"If", "[", "\[IndentingNewLine]", 
-  RowBox[{"Not", "[", 
-   RowBox[{"FileExistsQ", "[", "$GalaxyImageFilteredDirectory", "]"}], 
-   "]"}]}]], "Input",
- CellChangeTimes->{{3.641953689156215*^9, 3.64195371685273*^9}}],
+ RowBox[{"FileNameJoin", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"NotebookDirectory", "[", "]"}], ",", 
+    "\"\<GalaxyClassification.m\>\""}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.641953689156215*^9, 3.64195371685273*^9}, 
+   3.641955262173298*^9}],
 
-Cell[BoxData["True"], "Output",
- CellChangeTimes->{{3.6419536958256073`*^9, 3.641953709027281*^9}}]
-}, Open  ]]
+Cell[BoxData["\<\"E:\\\\GDrive\\\\GitHub\\\\GalaxyClassification\\\\\
+GalaxyClassification.m\"\>"], "Output",
+ CellChangeTimes->{{3.6419536958256073`*^9, 3.641953709027281*^9}, 
+   3.6419552631112795`*^9}]
+}, Open  ]],
+
+Cell[BoxData["Resources"], "Input",
+ CellChangeTimes->{{3.6419552990054064`*^9, 3.641955300403488*^9}}]
 },
 WindowSize->{783, 883},
 WindowMargins->{{Automatic, -858}, {-324, Automatic}},
@@ -164,29 +151,25 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 291, 7, 33, "Input"],
+Cell[852, 29, 207, 3, 33, "Input"],
 Cell[CellGroupData[{
-Cell[874, 31, 232, 4, 33, "Input"],
-Cell[1109, 37, 376, 8, 55, "Output"]
-}, Open  ]],
-Cell[1500, 48, 207, 3, 33, "Input"],
-Cell[CellGroupData[{
-Cell[1732, 55, 249, 4, 29, "Input"],
-Cell[1984, 61, 522, 10, 21, "Message"],
-Cell[2509, 73, 204, 4, 29, "Output"]
+Cell[1084, 36, 296, 5, 29, "Input"],
+Cell[1383, 43, 707, 14, 108, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2750, 82, 224, 5, 33, "Input"],
-Cell[2977, 89, 170, 2, 29, "Output"]
+Cell[2127, 62, 224, 5, 33, "Input"],
+Cell[2354, 69, 170, 2, 29, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3184, 96, 356, 8, 33, "Input"],
-Cell[3543, 106, 502, 10, 21, "Message"],
-Cell[4048, 118, 180, 4, 29, "Output"]
+Cell[2561, 76, 356, 8, 33, "Input"],
+Cell[2920, 86, 502, 10, 21, "Message"],
+Cell[3425, 98, 180, 4, 29, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4265, 127, 239, 5, 55, "Input"],
-Cell[4507, 134, 99, 1, 29, "Output"]
-}, Open  ]]
+Cell[3642, 107, 278, 7, 33, "Input"],
+Cell[3923, 116, 205, 3, 29, "Output"]
+}, Open  ]],
+Cell[4143, 122, 103, 1, 29, "Input"]
 }
 ]
 *)
