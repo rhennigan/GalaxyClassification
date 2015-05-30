@@ -5,6 +5,10 @@
 
 BeginPackage["GalaxyClassification`ImageProcessing`", {"GalaxyClassification`"}]
 
+CheckAndTransform::usage = ""
+
+Begin["`Private`"]
+
 selectGalaxy[img_, t_] := SelectComponents[FillingTransform@Binarize[img, t], "Area", -1]
 selectGalaxy[img_] := SelectComponents[FillingTransform@Binarize[img], "Area", -1]
 galaxyAngle[galaxyComponent_] := 1 /. ComponentMeasurements[galaxyComponent, "Orientation"]
@@ -36,5 +40,14 @@ transformImage[img_] := Module[{w, h, components, label, img2, imgc, orientation
   resized = With[{m = Max[ImageDimensions[cropped]]}, ImageResize[ImageCrop[cropped, {m, m}], Min[w, h] / 2]];
   resized
 ]
+
+CheckAndTransform[sourceDir_String, fileName_String] := Module[
+  {outFileName},
+  outFileName = FileNameJoin[{sourceDir, FileNameTake[fileName]}];
+  If[Not[FileExistsQ[outFileName]], Export[outFileName, transformImage[Import[fileName]]]];
+]
+
+(* End Private Context *)
+End[]
 
 EndPackage[]
