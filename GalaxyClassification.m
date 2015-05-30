@@ -12,10 +12,12 @@
 (* :Keywords:                  *)
 (* :Discussion:                *)
 
-BeginPackage["GalaxyClassification`", {"GalaxyClassification`ImageProcessing"}]
+BeginPackage["GalaxyClassification`"]
 
 Unprotect["`*"]
 ClearAll["`*"]
+
+Get["ImageProcessing.m"]
 
 (* Exported symbols added here with SymbolName::usage *)
 
