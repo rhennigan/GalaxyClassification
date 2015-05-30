@@ -35,10 +35,7 @@ $GalaxyImageFilteredDirectory = FileNameJoin[{$ProjectDirectory, "images_trainin
 sourceImageFileNames = FileNames[FileNameJoin[{$GalaxyImageSourceDirectory, "*.jpg"}]];
 filteredImageFileNames = FileNames[FileNameJoin[{$GalaxyImageFilteredDirectory, "lg_*.jpg"}]];
 
-If[Not[FileExistsQ[$GalaxyImageFilteredDirectory]],
-  CreateDirectory[$GalaxyImageFilteredDirectory];
-
-]
+If[Not[FileExistsQ[$GalaxyImageFilteredDirectory]], CreateDirectory[$GalaxyImageFilteredDirectory]];
 
 
 
