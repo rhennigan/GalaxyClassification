@@ -24,7 +24,13 @@ ClearAll["`*"]
 
 (* Load dependencies *)
 $ProjectDirectory = DirectoryName[$InputFileName];
-getDependency[name_String] := Get[FileNameJoin[{$ProjectDirectory, name <> ".m"}]]
+
+getDependency[name_String] := Module[
+  {},
+  Get[FileNameJoin[{$ProjectDirectory, name <> ".m"}]];
+  Needs["GalaxyClassification`" <> name <> "`"];
+]
+
 getDependency["ImageProcessing"];
 
 (* Path configuration for importing images *)
