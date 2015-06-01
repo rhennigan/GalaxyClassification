@@ -71,3 +71,9 @@ $RECYCLE.BIN/
 # Images
 *.jpg
 *.png
+
+# Project data
+images_training_rev1/
+images_training_rev1_filtered/
+training_solutions_rev1.csv
+*.mx

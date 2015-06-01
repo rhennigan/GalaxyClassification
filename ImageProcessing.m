@@ -22,6 +22,7 @@ selectCenterGalaxy[img_, t_] := Module[
   label = MinimalBy[ComponentMeasurements[components, "Centroid"], Norm[#[[2]] - ImageDimensions[img] / 2]&][[1, 1]];
   SelectComponents[components, "Label", # == label&]
 ]
+
 selectCenterGalaxy[img_] := Module[
   {components, label},
   components = FillingTransform@Binarize[img];
